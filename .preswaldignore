@@ -1,0 +1,9 @@
+venv/
+data/
+assets/
+examples/
+docs/
+frontend/
+*.tar.gz
+*.zip
+

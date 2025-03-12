@@ -1,8 +1,10 @@
 [project]
 name = "my_project"
+slug = "my-project"  
+
 description = "Order Data Analysis using Preswald"
 version = "0.1.0"
-entrypoint = "hello.py"  # Add this line
+entrypoint = "hello.py"  
 
 [dependencies]
 preswald = "*"
