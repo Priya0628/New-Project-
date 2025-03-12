@@ -1,9 +1,16 @@
+# Ignore virtual environment
 venv/
-data/
+
+# Ignore datasets (keep only small ones)
+data/*.csv
+!data/List_of_Orders_Small.csv  # Keep only small dataset
+
+# Ignore unnecessary assets
 assets/
 examples/
 docs/
 frontend/
+
+# Ignore compressed files
 *.tar.gz
 *.zip
-
