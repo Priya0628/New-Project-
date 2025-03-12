@@ -9,17 +9,17 @@ text("Exploring the orders dataset ")
 
 # Load the dataset
 connect()
-df = get_df("List of Orders.csv")
+df = get_df("data/List_of_Orders_Small.csv")  # Load the smaller dataset
 
 if df is None:
     text("⚠️ Error: Data could not be loaded. Trying manual load...")
-    csv_path = "data/List of Orders.csv"
+    csv_path = "data/List_of_Orders_Small.csv"
     
     if os.path.exists(csv_path):
         df = pd.read_csv(csv_path)
-        text(" Data loaded successfully!")
+        text("✅ Data loaded successfully!")
     else:
-        text(f"File '{csv_path}' not found! Check the directory.")
+        text(f"❌ File '{csv_path}' not found! Check the directory.")
         df = None  # Stop further execution if file is missing
 
 # Proceed only if df is successfully loaded
